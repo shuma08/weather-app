@@ -1,0 +1,147 @@
+.location-container {
+    height: 30vh;
+}
+
+.ant-layout-header.header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >div {
+        display: flex;
+    }
+}
+
+.content-container {
+    height: 100vh
+}
+
+.ant-layout {
+    background-image: linear-gradient(to top, #313050, #62475e, #87656c, #a28781, #b9aca0, #c2bcb0, #ccccc2, #d8dbd5, #d6dad5, #d4d9d5, #d3d7d5, #d2d6d5);
+}
+
+.carousel-container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    height: calc(100% - 64px);
+
+    .ant-carousel {
+        height: 65%;
+
+        .slick-slider {
+            height: 100%;
+
+        }
+
+    }
+
+    .card-container {
+        display: flex !important;
+        justify-content: center;
+        height: 55vh;
+        align-items: flex-end;
+
+
+
+        .font-style {
+            color: #313050;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .save-btn {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            color: #313050;
+
+            &:hover {
+                color: #ffff;
+                background-color: #313050;
+                cursor: pointer;
+                border-color: #313050;
+            }
+
+        }
+
+        .refresh-btn {
+            position: absolute;
+            top: 16px;
+            right: 104px;
+        }
+
+        .ant-card {
+            width: 520px;
+            height: 380px;
+
+            .ant-card-head-title {
+                color: #313050;
+                font-size: 20px;
+                font-weight: 800;
+            }
+
+            .ant-card-body {
+                padding: 0 24px;
+            }
+
+            .min-max-container {
+                display: flex;
+                justify-content: space-between;
+
+                .min-max-card {
+                    width: 140px;
+                    height: 90px;
+
+                    .ant-card-body {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .img-temp-container {
+            display: flex;
+            justify-content: space-between;
+
+            .temp-container {
+                display: flex;
+                flex-direction: column;
+                width: 120px;
+
+                &>span {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                }
+
+                .degrees {
+                    font-size: 30px;
+                    font-weight: 900;
+                    color: #62475e;
+                    // background: -webkit-linear-gradient(#313050, #62475e, #87656c, #a28781, #b9aca0, #c2bcb0, #ccccc2, #d8dbd5, #d6dad5, #d4d9d5, #d3d7d5, #d2d6d5);
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent
+                }
+            }
+        }
+    }
+
+    .location-container {
+        display: flex !important;
+        justify-content: center;
+
+        .card-container {
+            align-items: flex-start;
+        }
+    }
+
+    // .carousel {
+    //     height: 50vh;
+    //     display: flex;
+    //     align-items: center;
+    // }
+}
